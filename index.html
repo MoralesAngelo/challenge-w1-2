@@ -12,7 +12,7 @@
     <title>Compramos Tu Coche</title>
   </head>
   <body>
-    <header>
+    <header style="background-color: lightskyblue">
       <nav>
         <ul>
           <li>
@@ -27,50 +27,86 @@
       </nav>
     </header>
     <main>
-        <h1>Compramos tu coche RAPIDO</h1>
-        <p>
-          Vende tu coche cómodamente al mayor comprador de coches de Europa.
-          Rápido, fácil y con total seguridad.
-        </p>
-        h1>Formulario de Coche</h1>
+      <h1>Compramos tu coche RAPIDO</h1>
+      <p>
+        Vende tu coche cómodamente al mayor comprador de coches de Europa.
+        Rápido, fácil y con total seguridad.
+      </p>
+
+      <section id="formularioCarros">
+        <form>
+          <fieldset>
+            <label for="marca"
+              ><strong>¿Cuál es la marca de tu coche?</strong></label
+            >
+            <section>
+              <select id="marca" name="marca">
+                <option value="toyota">Toyota</option>
+                <option value="ford">Ford</option>
+                <option value="chevrolet">Chevrolet</option>
+              </select>
+            </section>
+
+            <label for="modelo"><strong>¿Cuál es el modelo?</strong></label>
+            <section>
+              <select id="modelo" name="modelo">
+                <option value="rustico">Rustico</option>
+                <option value="Clasico">Clasico</option>
+                <option value="Sedan">Sedan</option>
+              </select>
+            </section>
+
+            <label for="year"><strong>¿En qué año se matriculó?</strong></label>
+            <section>
+              <select id="year" name="year">
+                <option value="2000-2005">2000-2005</option>
+                <option value="2006-2015">2006-2015</option>
+                <option value="2016-2024">2016-2024</option>
+              </select>
+            </section>
+
+            <button type="submit">Ver Oferta</button>
+          </fieldset>
+        </form>
+      </section>
+      <section id="pasosParaVender" style="background-color: lightskyblue">
+        <h2>Vende tu coche fácilmente</h2>
+        <form>
+          <p><b>1. Introduce los datos de tu coche</b></p>
+          <p>
+            ¡Nuestra oferta no es una estimación! La calculamos a partir de los
+            datos que nos proporcionas en la web, incluyendo los extras
+            opcionales.
+          </p>
+
+          <p><b>2. Recibe tu oferta real</b></p>
+          <p>
+            En cuanto evaluemos los datos que has introducido de tu coche, te
+            enviaremos tu oferta por e-mail.
+          </p>
+
+          <p><b>3. Vende tu coche solo si quieres</b></p>
+          <p>
+            Si decides vender tu coche, pide cita en una de nuestras sucursales
+            más cercanas.
+          </p>
+
+          <button type="submit">Continuar</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <h2>Suscríbete a nuestra newsletter</h2>
 
     <form>
-      <fieldset>
-        
-        <label for="marca">¿Cuál es la marca de tu coche?</label>
-        <div>
-          <select id="marca" name="marca">
-              <option value="toyota">Toyota</option>
-              <option value="ford">Ford</option>
-              <option value="chevrolet">Chevrolet</option>
-          </select>
-        </div>
-        
-        
-        <label for="modelo">¿Cuál es el modelo?</label>
-        <div>
-   <select id="modelo" name="modelo">
-      <option value="rustico">Rustico</option>
-      <option value="Clasico">Clasico</option>
-      <option value="Sedan">Sedan</option>
-  </select>
-</div>
+        <label for="correo">Correo electrónico</label>
+        <input type="email" id="correo" name="correo" required placeholder="Ingresa tu Email">
 
-<label for="year">¿En qué año se matriculó?</label>
-<div>
-         <select id="year" name="year">
-            <option value="2000-2005">2000-2005</option>
-            <option value="2006-2015">2006-2015</option>
-            <option value="2016-2024">2016-2024</option>
-        </select>>
-</div>
-        
+        <p>Al registrarte estás aceptando los términos generales y condiciones así como la política de privacidad de datos.</p>
 
-        <button type="submit">Enviar</button>
-
-
-      </fieldset>
+        <button type="submit">Suscribirse</button>
     </form>
-    </main>
+    </form>
+    </footer>
   </body>
 </html>
